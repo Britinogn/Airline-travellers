@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ------nav -------- */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px 7%;
+}
+
+
+.logo{
+    text-decoration: none;
+    width: 140px;
+    cursor: pointer;
+    background: red;
+    /* opacity: 0.7; */
+    /* border-radius: 1px; */
+}
+
+
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.nav-links li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links li a:hover{
+    color: #eee;
+    /* text-decoration: underline; */
+    transition: 0.4s;
+}
+
+.register-btn{
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius:20px;
+    font-size:14px;
+}
+
+.register-btn:hover{
+    background: #999;
+    color: #eee;
+    transition: 0.4s ease;
+    transform:translateY(-5%);
+}
+
+nav .fa-bars{
+    
+
+    display: none;
+}
+
+/* ----------Form----------- */
+
+.container{
+    padding: 0 7%;
+}
+
+.header h1{
+    font-size: 4vw;
+    font-weight: 500px;
+    color: #fff;
+    text-align: center;
+    padding-top: 22%;
+}
+
+.search-bar{
+    background: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding:6px 10px 6px 30px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+    padding: 2px;
+}
+
+.search-bar form button{
+    background: #ff5361;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-bar form button img{
+    width: 15px;
+    margin-top: 5px;
+}
+
+.location-input{
+    flex:1;
+}
+
+.search-bar form label{
+    font-weight: 600;
+}
+
+
+/* ----------Exclusives------------ */
+
+
+.sub-title{
+    /* text-align: center; */
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    color: #333;
+}
+
+.exclusives{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    padding: 12px;
+    box-shadow: 0 0 5px;
+}
+
+.exclusives div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.exclusives div{
+    position: relative;
+}
+
+span{
+    position: absolute;
+    color: #eee;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+
+/* --------Trending Place---------- */
+
+
+.trending{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    padding: 12px;
+    box-shadow: 0 0 5px;
+    margin-bottom: 30px;
+}
+
+.trending div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.trending h3{
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* ---------call to action -------- */
+
+.cta{
+  /* text-align: center; */
+  margin: 80px 0;
+  background-image:linear-gradient(to right, #3f2321 , transparent) , url(images/banner-2.png);
+  background-size: cover;
+  color: #eee;
+  background-position: center;
+  padding: 5%;
+  border-radius:10px;
+}
+
+
+.cta h3{
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+
+.cta p{
+    font-size:18px; 
+    margin: 18px 0;
+}
+
+.cta-btn{
+    display:inline-block;
+    text-decoration: none;
+    background:#ff5361;
+    color: #eee;
+    padding: 12px 30px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+
+/* ---------travel-------- */
+
+.stories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+    padding: 12px;
+    box-shadow: 0 0 5px;
+}
+
+.stories div img{
+    width:100%;
+    border-radius: 10px;
+}
+
+.stories h3{
+    color: #333;
+    margin-top: 10px;
+}
+
+.stories div{
+    position: relative;
+    text-align: center;
+}
+
+.stories p{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #eee;
+    transform: translate(-50%, -50%);
+}
+
+
+.start-btn{
+    background: #ff5361;
+    text-decoration: none;
+    width: 75%;
+    color: #fff;
+    display: block;
+    max-width: 350px;
+    text-align: center;
+    margin: 60px auto;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.start-btn:is(:hover, :focus){
+    background: #999;
+    color: #111;
+}
+
+
+/* -----------Our Amazing Story---------------- */
+
+.about-us{
+    text-align: center;
+    margin: 80px 0;
+    color: #333;
+    font-size: 17px;
+}
+
+.about-us h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+
+.about-us p{
+    text-align:justify;
+    color: #444;
+}
+
+/* ----------footer--------- */
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+    color: #666;
+}
+
+
+.footer hr{
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 10px;
+}
+
+
+/* ----------popular places ---------- */
+
+.active{
+    position: relative;
+}
+
+.active::after{
+    content:'';
+    background: #fff;
+    width: 27px;
+    position: absolute;
+    left: 50%;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    bottom: -10px;
+    height: 2px;
+}
+
+
+
+/* ----------small screen styling --------- */
+
+@media only screen and (max-width:700px){
+    .logo{
+        position: fixed;
+        top: 4%;
+        left: 7%;
+    }
+
+    nav{
+        position: fixed;
+        top:0;
+        z-index: 100;
+        display:inline-block;
+        width: 100%;
+        padding: 100px 7% 0;
+        text-align:right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 1s;
+    }
+
+
+    /* nav .nav-links{
+        background: #333;
+    } */
+
+    nav .nav-links li{
+        margin: 10px 0;
+        display: block;
+    }
+
+    nav .nav-links li a{
+        font-size: 20px;
+    }
+
+
+    .register-btn{
+        margin: 15px 0 30px;
+        display: inline-block;
+    }
+
+    nav .fa-bars{
+        display: block;
+        position: fixed;
+        top: 4%;
+        right: 7%;
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    nav .fa-xmark{
+        float: right;
+        cursor: pointer;
+        display: block;
+    }
+
+    .active::after{
+        left:-40px;
+        transform: translateX(0, 50%);
+        bottom: -10px;
+    }
+
+    /* ------ For Javascript -------- */
+
+    .hidemenu{
+        max-height: 300px;
+    }
+
+
+    .header h1{
+        padding-top: 300px;
+        font-size: 7vw;
+    }
+
+    .search-bar{
+        width: 90%;
+        margin: 30px 0;
+        padding: 20px  10px 30px;
+        border-radius: 10px;
+    }
+
+    .search-bar form{
+        display: block;
+    }
+
+    .search-bar form input{
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .search-bar form button{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    .sub-title{
+        font-size: 6vw;
+    }
+
+
+    .cta{
+        padding: 15% 5%;
+    }
+
+    .cta h3{
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+
+    .cta p{
+        font-size: 14px;
+    }
+
+    .cta-btn{
+        padding: 6px 15px;
+        border-radius: 4px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .stories p{
+        font-size: 22px;
+    }
+
+    .about-us h2{
+        font-size: 25px;
+    }
+
+    .about-us p{
+     font-size: 14px;
+    }
+
+}
+
+
+/* --------- this is the listing section ---------- */
+
+
+.navbar-list{
+    background: #eee;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-list  .nav-links li a{
+    color: #000;
+}
+
+.navbar-list .register-btn{
+    color: #fff;
+    background: #ff5361;
+}
+
+nav.navbar-list .fa-bars{
+    color: #111;
+}
+
+
+.navbar-list .active::after{
+    background:#ff5361;
+}
+
+.list-container{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.left-col{
+    flex-basis: 70%;
+}
+
+.right-col{
+    flex-basis: 25%;
+}
+
+.left-col h1{
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 2px solid #ccc;
+}
+
+.house .house-img{
+    flex-basis: 40%;
+}
+
+.house .house-info{
+    flex-basis: 58%;
+    color: #555;
+}
+.house-img img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.house-info h3{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    
+}
